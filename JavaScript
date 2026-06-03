@@ -1,0 +1,28 @@
+// Lista de dicas simples que vão alternar ao clicar no botão
+const dicas = [
+    "Apoie os produtores locais que utilizam práticas orgânicas.",
+    "O uso de cisternas para captar água da chuva ajuda a economizar recursos hídricos.",
+    "A rotação de culturas evita o desgaste do solo e reduz a necessidade de defensivos químicos.",
+    "O manejo integrado de pragas utiliza a própria natureza para proteger a lavoura.",
+    "Preservar as matas ciliares protege os rios que abastecem as propriedades rurais."
+];
+
+const btnDica = document.getElementById('btn-dica');
+const textoDica = document.getElementById('texto-dica');
+
+let indice = 0;
+
+// Função simples para mudar o texto na tela
+btnDica.addEventListener('click', function() {
+    textoDica.textContent = dicas[indice];
+    
+    // Avança para a próxima dica, se chegar no fim, volta para o começo
+    indice++;
+    if (indice >= dicas.length) {
+        indice = 0;
+    }
+});
+
+// Mostra a primeira dica assim que a página carrega
+textoDica.textContent = dicas[0];
+indice = 1;
