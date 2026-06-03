@@ -1,0 +1,88 @@
+/* Cores e estilos básicos da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho simples */
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-style: italic;
+}
+
+/* Container principal para centralizar o conteúdo */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Seções de texto */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1b5e20;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 5px;
+}
+
+/* Caixa de interação simples (Dica do Dia) */
+.interacao {
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    padding: 15px;
+    text-align: center;
+}
+
+#texto-dica {
+    font-weight: bold; 
+    color: #1b5e20; 
+    min-height: 24px;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+} 
